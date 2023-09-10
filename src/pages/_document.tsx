@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <title>RoutiMinder</title>
         <link rel="icon" href="/favicon.png" />
         <meta name='description'  content='RoutiMinder: Your Day, Your Way. Routinely. Craft and follow your daily routines effortlessly.'/>
         <meta property='og:title' content='RoutiMinder' />
