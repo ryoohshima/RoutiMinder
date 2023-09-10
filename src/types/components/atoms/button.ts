@@ -6,4 +6,5 @@ export type ButtonProps = {
   size: Size;
   color: Color;
   bgColor: Color;
+  type: 'button' | 'submit';
 };

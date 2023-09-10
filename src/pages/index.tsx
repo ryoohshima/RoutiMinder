@@ -3,6 +3,7 @@ import DefaultLayout from '@/layouts/DefaultLayout';
 import RoutineList from '@/components/organisms/RoutineList';
 import { HomeProps } from '@/types/index';
 import fetchData from '@/lib/fetchData';
+import withAuth from '@/hocs/withAuth';
 
 export const getServerSideProps = async (context) => {
   const data = await fetchData();
@@ -17,4 +18,4 @@ const Home = ({ routines }: HomeProps) => {
   )
 }
 
-export default Home;
+export default withAuth(Home);
