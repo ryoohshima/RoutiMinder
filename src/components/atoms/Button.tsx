@@ -9,9 +9,7 @@ const Button = (props: ButtonProps) => {
   const borderColor = getBorderColor(props.color, 'all')
 
   return (
-    <div>
-      <button className={`${fontColor} ${fontSize} ${bgColor} ${borderColor}`}>{props.text}</button>
-    </div>
+    <button className={`w-full p-2 rounded-md ${fontColor} ${fontSize} ${bgColor} ${borderColor}`} type={props.type}>{props.text}</button>
   )
 }
 
