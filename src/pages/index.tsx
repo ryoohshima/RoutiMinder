@@ -1,10 +1,18 @@
 import React from 'react';
 import DefaultLayout from '@/layouts/DefaultLayout';
+import RoutineList from '@/components/organisms/RoutineList';
+import { HomeProps } from '@/types/index';
+import fetchData from '@/lib/fetchData';
 
-const Home = () => {
+export const getServerSideProps = async (context) => {
+  const data = await fetchData();
+  return data;
+}
+
+const Home = ({ routines }: HomeProps) => {
   return (
     <DefaultLayout>
-      <h1 className="text-4xl font-bold text-center">Hello, world!</h1>
+      <RoutineList routines={routines}/>
     </DefaultLayout>
   )
 }
