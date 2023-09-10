@@ -8,7 +8,7 @@ export default function Document() {
         <link rel="icon" href="/favicon.png" />
         <meta name='description'  content='RoutiMinder: Your Day, Your Way. Routinely. Craft and follow your daily routines effortlessly.'/>
         <meta property='og:title' content='RoutiMinder' />
-        <meta property='og:image' content='/logo_ogp.png'/>
+        <meta property='og:image' content='https://routi-minder.vercel.app/logo_ogp.png'/>
         <meta property='og:url' content='https://routi-minder.vercel.app/'/>
         <meta property='og:type' content='website'/>
       </Head>
