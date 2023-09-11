@@ -1,10 +1,17 @@
 import { Size } from '@/types/globals';
 import { Color } from '@/types/globals';
 
-export type ButtonProps = {
+export type ButtonSubmitProps = {
   text: string;
   size: Size;
   color: Color;
   bgColor: Color;
-  type: 'button' | 'submit';
+};
+
+export type ButtonClickProps = {
+  text: string;
+  size: Size;
+  color: Color;
+  bgColor: Color;
+  onClick: () => void;
 };
