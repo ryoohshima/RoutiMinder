@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Paragraph from '@/components/atoms/Paragraph';
 import AuthLayout from '@/layouts/AuthLayout';
-import Button from '@/components/atoms/Button';
+import ButtonSubmit from '@/components/atoms/ButtonSubmit';
 import supabase from '@/lib/supabase';
 import withAuthRedirect from '@/hocs/withAuthRedirect';
 
@@ -53,7 +53,7 @@ const LoginPage = () => {
           />
         </label>
         <div>
-          <Button type='submit' text='Login' size='medium' color='white' bgColor='primary' />
+          <ButtonSubmit text='Login' size='medium' color='white' bgColor='primary'/>
         </div>
       </form>
     </AuthLayout>
